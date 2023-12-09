@@ -1,0 +1,455 @@
+@import url("https://fonts.googleapis.com/css2?family=Fasthand&family=Poppins:ital,wght@0,400;1,300;1,500&display=swap");
+
+:root {
+  --blue: blue;
+  --black: #130f40;
+  --light: #666;
+  --box-shadow: 0 0.1rem 1rem rgba(0, 0, 0.1);
+  --rox-shadow: 0 0.1rem 1rem rgb(255, 255, 255);
+  --gox-shadow: 0 0.2rem 2rem rgb(4, 4, 44);
+  --border: 1rem solid rgb(174, 128, 128);
+  --outline: 0.1rem solid rgb(110, 107, 107);
+}
+
+* {
+  font-family: "Fasthand", cursive;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+
+body {
+  background: rgb(255, 255, 255);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 6%;
+  background: white;
+  box-shadow: var(--box-shadow);
+}
+
+.sign {
+  height: 35%;
+  width: 35%;
+}
+
+.header .navbar a {
+  font-size: 2.2rem;
+  margin: 0 1rem;
+  color: var(--black);
+  font-weight: bolder;
+}
+
+.header .navbar a:hover {
+  color: var(--blue);
+}
+
+.header .icons div {
+  height: 4rem;
+  width: 8rem;
+  line-height: 4.5rem;
+  border-radius: 0.5rem;
+  background-color: #eee;
+  font-size: 12px;
+  cursor: pointer;
+  margin: 0.5rem;
+  display: inline-flex;
+  font-weight: bold;
+  color: #130f40;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.header .icons div:hover {
+  background-color: rgb(151, 151, 255);
+}
+
+#menu-btn {
+  display: none;
+}
+.header .navbar.active {
+  right: 2rem;
+  transition: 0.2s linear;
+}
+
+.header .search-form {
+  position: absolute;
+  top: 110%;
+  right: -110%;
+  width: 40rem;
+  height: 4rem;
+  background-color: #eee;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  box-shadow: var(--box-shadow);
+}
+.header .search-form.active {
+  right: 2rem;
+  transition: 0.2s linear;
+}
+
+.header .search-form input {
+  height: 100%;
+  width: 100%;
+  background: none;
+  text-transform: none;
+  font-size: 1.6rem;
+  padding: 1.5rem;
+}
+.header .search-form label {
+  font-size: 1.5rem;
+  padding-right: 1.5rem;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.header .search-form label:hover {
+  color: rgb(151, 151, 255);
+}
+
+.btn {
+  border: 0.2rem solid;
+  margin-top: 1rem;
+  display: inline-block;
+
+  padding: 0.8rem 3rem;
+  font-size: 1.7rem;
+  border-radius: 0.5rem;
+  color: var(--black);
+  cursor: pointer;
+  background: none;
+  font-weight: bold;
+}
+.btn:hover {
+  background: white;
+}
+
+.header .login-form {
+  border-radius: 0.5rem;
+  position: absolute;
+  width: 30rem;
+  top: 110%;
+  right: -110%;
+  box-shadow: var(--box-shadow);
+  padding: 2rem;
+  background: #dad7d7;
+  text-align: center;
+}
+
+.header .login-form.active {
+  right: 2rem;
+  transition: 0.2s linear;
+}
+
+.header .login-form h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.box {
+  width: 100%;
+
+  margin: 0.7rem 0;
+  background: white;
+  border-radius: 0.7rem;
+  padding: 1rem;
+  font-size: 1.6rem;
+  color: var(--black);
+  text-transform: none;
+}
+.box img {
+  border-radius: 0.7rem;
+}
+.dd {
+  background: yellow;
+  padding: 1.5rem;
+  font-size: 5px;
+  border-radius: 10rem;
+}
+
+.header .login-form p {
+  font-size: 1.5rem;
+}
+a {
+  color: #130f40;
+}
+.header .login-form p:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 2rem 9%;
+}
+.home {
+  display: flex;
+  justify-content: center;
+  background: url(/images/ban.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-top: 64rem;
+  padding-bottom: 1rem;
+  margin-top: 1%;
+}
+.home .content {
+  text-align: center;
+  background-color: white;
+  font-size: 20px;
+  padding: 1.2rem;
+  color: rgb(0, 0, 0);
+  border-radius: 1rem;
+  /* border: 1px solid rgb(10, 10, 10); */
+  box-shadow: var(--rox-shadow);
+}
+
+.hh {
+  text-align: center;
+  padding: 0rem 0;
+  padding-bottom: 1rem;
+  font-size: 5rem;
+  color: var(--black);
+}
+#ff {
+  height: 30rem;
+  width: 32rem;
+}
+.donate .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 5rem;
+}
+.donate .box-container .box {
+  padding: 3rem 2rem;
+  background: #cfcfcf;
+  text-align: center;
+}
+.donate .box-container .box:hover {
+  box-shadow: var(--gox-shadow);
+}
+.donate {
+  padding: 5rem;
+}
+
+.hg {
+  text-align: center;
+  padding: 4rem 0;
+  padding-bottom: 1rem;
+  font-size: 5rem;
+  color: var(--black);
+}
+
+.fd {
+  padding: 2rem;
+  margin: 2rem;
+  background: #b8b4b4;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 1rem;
+}
+.fd h3 {
+  font-size: 25px;
+  background-color: white;
+  padding-top: 7rem;
+  border-radius: 1rem;
+  border: 0.5px solid #fffb00;
+}
+.fd p {
+  background-color: white;
+  border-radius: 1rem;
+  border: 0.5px solid #fffb00;
+  padding: 1rem;
+}
+.box-container .fd {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 5rem;
+}
+
+.review .rev-slid {
+  padding: 1rem;
+}
+.review .rev-slid .box {
+  border: 0px solid red;
+  background: #fff;
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 3rem 2rem;
+  outline-offset: -1rem;
+  outline: var(--outline);
+  box-shadow: var(--box-shadow);
+  transition: 0.2s linear;
+}
+
+.review .rev-slid .box:hover {
+  box-shadow: 1px 1px 10px 4px var(--black);
+}
+.review .rev-slid .box img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+}
+.review .rev-slid .box p {
+  padding: 1rem 0;
+  line-height: 1.8;
+}
+.review .rev-slid .box h3 {
+  font-size: 3rem;
+}
+.review .rev-slid .box .stars i {
+  color: orange;
+  font-size: 2.2rem;
+}
+
+/* media query */
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  .header {
+    padding: 2rem;
+  }
+  section {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-btn {
+    display: inline-block;
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    width: 30rem;
+    box-shadow: var(--box-shadow);
+    background: #fff;
+  }
+  .header .navbar a {
+    font-size: 2rem;
+    margin: 2rem 2.5rem;
+    display: block;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .icons {
+    display: flex;
+  }
+}
+
+.heading {
+  text-align: center;
+  padding: 2rem 0;
+  padding-bottom: 3rem;
+  font-size: 3.5rem;
+  color: var(--black);
+}
+.heading span {
+  background: var(--green);
+  color: #fff;
+  display: inline-block;
+  padding: 0.5rem 3rem;
+
+  clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+
+.header .sign-form {
+  border-radius: 0.5rem;
+  position: absolute;
+  width: 30rem;
+  top: 110%;
+  right: -110%;
+  box-shadow: var(--box-shadow);
+  padding: 2rem;
+  background: #dad7d7;
+  text-align: center;
+}
+
+.header .sign-form.active {
+  right: 2rem;
+  transition: 0.2s linear;
+}
+
+/* footer */
+.footer {
+  background-color: #fff;
+}
+.footer .box-container {
+  border: 0px solid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+  gap: 1.5rem;
+}
+.footer .box-container .box h3 {
+  font-size: 2rem;
+  color: var(--black);
+  padding: 1rem 0;
+}
+.footer .box-container .box h3 i {
+  color: #130f40;
+}
+.footer .box-container .box .links i {
+  color: #130f40;
+  padding: 0.5rem;
+}
+.footer .box-container .box .links {
+  display: block;
+  font-size: 2rem;
+  color: var(--black);
+  padding: 1rem 0;
+}
+.footer .box-container .box a:hover i {
+  padding-right: 2rem;
+}
+.footer .box-container .box .share a {
+  height: 4rem;
+  width: 4rem;
+  line-height: 4rem;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  color: var(--black);
+  margin: 0.2rem;
+  background: #b8b4b4;
+  text-align: center;
+}
+.footer .box-container .box .share a:hover {
+  background-color: var(--black);
+  color: white;
+}
+
+.footer .credit {
+  text-align: center;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  padding-top: 2.5rem;
+  font-size: 2rem;
+  color: var(--black);
+  border-top: var(--border);
+}

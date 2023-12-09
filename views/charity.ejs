@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ngo charity</title>
+    <!--code for font awesome cdn-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!--code for font awesome cdn-->
+    <link rel="stylesheet" href="/css/charity.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!--header section-->
+    <header class="header">
+      <a href="#" class="logo">
+        <img src="/images/h5logo.png" alt="" class="sign" />
+      </a>
+      <nav class="navbar">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT US</a>
+        <a href="#review">REVIEW</a>
+        <a href="#blogs">BLOGS</a>
+        <a href="/donate" target="_blank" class="dd">Donate</a>
+      </nav>
+
+      <div class="icons">
+        <div class="fa fa-bars" id="menu-btn"></div>
+        <div class="fa fa-user" id="login-btn"></div>
+        <div class="fa fa-sign-in" id="fam-btn">SIGN UP</div>
+      </div>
+
+      <form class="search-form">
+        <input type="search" id="search-box" placeholder="Search Here...." />
+        <label for="search-box" class="fa fa-search"></label>
+      </form>
+
+      <form action="#" class="login-form">
+        <h3>LOGIN NOW</h3>
+        <input
+          type="email"
+          placeholder="Enter your email"
+          class="box"
+          id="login-email"
+        />
+        <input
+          type="password"
+          placeholder="Enter your password"
+          class="box"
+          id="login-password"
+        />
+
+        <input
+          type="submit"
+          value="Login"
+          class="btn"
+          onclick="handleLogin()"
+        />
+      </form>
+
+      <form action="#" class="sign-form" id="signup">
+        <h3>SIGN UP</h3>
+        <input
+          type="text"
+          placeholder="Enter your Name"
+          class="box"
+          id="name"
+        />
+        <input
+          type="text"
+          placeholder="Enter your Number"
+          class="box"
+          id="phoneNumber"
+        />
+        <input
+          type="email"
+          placeholder="Enter your email"
+          class="box"
+          id="signup-email"
+        />
+        <input
+          type="password"
+          placeholder="Enter your password"
+          class="box"
+          id="signup-password"
+        />
+        <input
+          type="submit"
+          value="SIGN UP"
+          class="btn"
+          onclick="handleSignup()"
+        />
+      </form>
+    </header>
+
+    <!--header section-->
+
+    ........
+
+    <!--home section-->
+    <section class="home" id="home">
+      <div class="content">
+        <h2>Make the Change so that changes society</h2>
+      </div>
+    </section>
+    <!--home section-->
+
+    <!--about section-->
+    <section class="aboutus" id="about">
+      <h1 class="hg">About Us</h1>
+      <div class="boxx-container">
+        <div class="fd">
+          <h3>Mission and Vision</h3>
+          <p>
+            At the heart of our initiative lies a simple yet profound mission –
+            to alleviate the burdens of poverty for children. We envision a
+            world where every child has access to food, education, and the
+            essentials needed for a healthy and fulfilling life.
+          </p>
+        </div>
+        <div class="fd">
+          <h3>Food for Nourishment</h3>
+          <p>
+            In recognizing the fundamental need for nutrition, our charity
+            tirelessly works to ensure that no child goes to bed hungry. Through
+            community partnerships, donations, and volunteer efforts, we
+            distribute nourishing meals that lay the foundation for physical
+            well-being.
+          </p>
+        </div>
+        <div class="fd">
+          <h3>Educational Empowerment</h3>
+          <p>
+            Education is the key to breaking the cycle of poverty. We invest in
+            the academic journey of underprivileged children, providing
+            resources, scholarships, and mentorship programs to empower them
+            with knowledge and skills that will shape their futures.
+          </p>
+        </div>
+        <div class="fd">
+          <h3>Basic Needs, Dignified Living</h3>
+          <p>
+            Beyond food and education, we address the basic needs that often go
+            unmet. From clothing and shelter to healthcare essentials, we
+            believe in fostering an environment where every child can experience
+            dignity and security.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--about section-->
+
+    <!--donate section-->
+    <section class="donate" id="donate">
+      <h1 class="hh">Donate</h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="/images/food.jpg" alt="" id="ff" />
+          <h3>Donate food</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <!-- <a href="#" class="btn">Donate</a> -->
+        </div>
+        <div class="box">
+          <img src="/images/education.jpg" alt="" id="ff" />
+          <h3>Educational Support</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <!-- <a href="#" class="btn">Donate</a> -->
+        </div>
+        <div class="box">
+          <img src="/images/display1.jpg" alt="" id="ff" />
+          <h3>Basic Needs</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <!-- <a href="#don" class="btn">Donate</a> -->
+        </div>
+      </div>
+      <!--       
+       <div class="container">
+        <div class="donation">
+        <form action="#" class="don-form" id="don">
+        <h1>DONATION FORM</h1>
+        <label>NAME:</label>
+        <input type="text" placeholder="Enter your Name" class="box" id="name"/>
+        <label>PHONE NO:</label>
+        <input type="text" placeholder="Enter your Number" class="box" id="phoneNumber" />
+        <label>EMAIL:</label>
+        <input type="email" placeholder="Enter your email" class="box" id="signup-email" />
+        
+      
+      </form>
+    </div>
+    </div> -->
+
+      <!-- 
+    <div class="container">
+      <div class="content">
+      <form action="#" method="post" id="don">
+        <h1>DONATE HERE</h1>
+        <label for="name">Name:</label>
+        <input type="text"  placeholder="Enter your name" required>
+  
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+  
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" min="1" required>
+  
+        <label for="category">CHOOSE A CATEGORY:</label>
+        <Select id="category">
+          <option>FOOD DONATION</option>
+          <option>EDUCATION SUPPORT</option>
+          <option>BASIC NEEDS</option>
+
+
+        </Select>
+       
+        
+       
+  
+        <button type="submit">Donate</button>
+      </form>
+    </div>
+  </div> -->
+    </section>
+
+    <script src="/js/charity.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+  <!-- Footer -->
+  <section class="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3>WE</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+          eligendi eum ducimus incidunt facere sed culpa? Voluptates
+          voluptatibus debitis sunt.
+        </p>
+        <div class="share">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a hr4685ef="#" class="fa fa-instagram"></a>
+          <a href="https://wa.me/+917204204685" class="fa fa-whatsapp"></a>
+        </div>
+      </div>
+      <div class="box">
+        <h3>Contact Info</h3>
+        <a href="#" class="links"><i class="fa fa-phone"></i>+91 8545964512</a>
+        <a href="#" class="links"><i class="fa fa-phone"></i>+91 8668452314</a>
+        <a href="#" class="links"><i class="fa fa-envelope"></i>we@emial.com</a>
+        <a href="#" class="links"
+          ><i class="fa fa-map-marker"></i>Mangalore,Karnataka</a
+        >
+      </div>
+      <div class="box">
+        <h3>Quick Links</h3>
+        <a href="#home" class="links"><i class="fa fa-arrow-right"></i>Home</a>
+        <a href="#about" class="links"
+          ><i class="fa fa-arrow-right"></i>AboutUs</a
+        >
+        <a href="#review" class="links"
+          ><i class="fa fa-arrow-right"></i>Review</a
+        >
+        <a href="#blogs" class="links"
+          ><i class="fa fa-arrow-right"></i>Blogs</a
+        >
+        <a href="#donate" class="links"
+          ><i class="fa fa-arrow-right"></i>Donate</a
+        >
+      </div>
+    </div>
+    <div class="credit">
+      Created by <span>Team WE </span> All Rights Reserved
+    </div>
+  </section>
+</html>
