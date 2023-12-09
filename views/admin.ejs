@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <!--code for font awesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!--code for font awesome cdn-->
+    <link rel="stylesheet" href="/css/charity.css" />
+    <link rel="stylesheet" href="/css/admin.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!--header section-->
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="/images/h5logo.png" alt="" class="sign" />
+        </a>
+        <nav class="navbar">
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT US</a>
+            <a href="#review">REVIEW</a>
+            <a href="#blogs">BLOGS</a>
+            <a href="/donate-page" target="_blank" class="dd">Donate</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fa fa-bars" id="menu-btn"></div>
+        </div>
+
+        <form class="search-form">
+            <input type="search" id="search-box" placeholder="Search Here...." />
+            <label for="search-box" class="fa fa-search"></label>
+        </form>
+
+    </header>
+
+    <!--header section-->
+
+    <!-- Donation list -->
+
+    <div class="donation-list-container">
+        <h1 style="margin-bottom: 1rem; text-align: center;">Donation List</h1>
+
+        <table id="donation-list">
+            <tr>
+                <th>Donar name</th>
+                <th>Email</th>
+                <th>Phone number</th>
+                <th>Donation amount</th>
+                <th>Donation type</th>
+                <th>Message</th>
+            </tr>
+            <% for(let i=0; i < data.length; i++) {%>
+                <tr>
+                    <td>
+                        <%= data[i].donorName %>
+                    </td>
+                    <td>
+                        <%= data[i].donorEmail %>
+                    </td>
+                    <td>
+                        <%= data[i].phone %>
+                    </td>
+                    <td>
+                        <%= data[i].amount %>
+                    </td>
+                    <td>
+                        <%= data[i].donationType %>
+                    </td>
+                    <td>
+                        <%= data[i].message %>
+                    </td>
+                </tr>
+                <% } %>
+        </table>
+    </div>
+
+
+    <script src="/js/charity.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
+</html>
